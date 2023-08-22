@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/*solo estilo index y pages*/
+/*Body.........................................................................................................*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Header.........................................................................................................*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #FFFEC4;
+  background-size: cover;
+}
+header .inicio {
+  width: 20%;
+}
+header .inicio .logo {
+  width: 100%;
+}
+header nav {
+  width: 100%;
+  font-size: 0.7rem;
+  align-content: start;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 0px;
+}
+header nav ul a {
+  text-decoration: none;
+}
+
+/*Footer..........................................................................................................*/
+.sus2 {
+  background-color: #CBFFA9;
+}
+.sus2 .sus1 {
+  grid-area: titulo;
+}
+.sus2 .sus1 h3 {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+.sus2 .sus {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "correo correo correo";
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.sus2 .sus .label {
+  grid-area: correo;
+  background-color: grey;
+  font-style: italic;
+  font-size: 1rem;
+  width: 30%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.sus3 .footer {
+  display: grid;
+  grid-template-areas: "tex1 tex1 tex1 tex1" "img1 img2 img3 img4";
+  grid-template-rows: 50px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.sus3 .footer .contactate {
+  grid-area: tex1;
+}
+.sus3 .footer .face {
+  grid-area: img1;
+  border-radius: 20%;
+  background-color: white;
+  border: 1px solid white;
+}
+.sus3 .footer .whats {
+  grid-area: img2;
+  background-color: white;
+  border: 1px solid white;
+}
+.sus3 .footer .tele {
+  grid-area: img3;
+}
+.sus3 .footer .instagram {
+  grid-area: img4;
+}
+
+/*Main...........................................................................................................*/
+.bienvenida {
+  width: 100%;
+}
+.bienvenida h1 {
+  color: #CBFFA9;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 3rem;
+  background-image: url(../medios/imagen-1.JPG);
+  background-position: center;
+  background-size: cover;
+  text-shadow: black;
+  padding: 50px;
+}
+
+.conocernos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 15px;
+}
+.conocernos .quienes h2 {
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.conocernos .quienes .niños {
+  width: 20%;
+  margin: 0px 0px 0px 40px;
+}
+.conocernos .quienes p {
+  color: black;
+  margin-top: 15px;
+  background-color: whitesmoke;
+}
+.conocernos .pedagogias h2 {
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.conocernos .pedagogias .montessori {
+  width: 20%;
+}
+.conocernos .pedagogias p {
+  color: black;
+  margin-top: 15px;
+  background-color: whitesmoke;
+}
+.conocernos .preguntas h2 {
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.conocernos .preguntas .preg {
+  width: 60%;
+}
+.conocernos .preguntas p {
+  color: black;
+  margin-top: 15px;
+  background-color: whitesmoke;
+}
+
+.destacados {
+  display: grid;
+  grid-template-areas: "tex1 tex1 tex1 tex1" "img1 img1 img1 img1";
+  grid-template-rows: 100px 1000px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.destacados .destacados1 {
+  grid-area: tex1;
+}
+.destacados .destacados2 {
+  grid-area: img1;
+  width: 100%;
+  height: 100%;
+}
+
+/*Main...........................................................................................................*/
+/*Mobile*/
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+  .pedagogias {
+    display: none;
+  }
+  .preguntas {
+    display: none;
+  }
+  h2 {
+    text-decoration: underline;
+    font-size: 1rem;
+    text-align: center;
+  }
+  h3 {
+    font-size: 0.75rem;
+  }
+  .quienes {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+  }
+  .niños {
+    width: 80%;
+  }
+  p {
+    padding: 0px 50px 0px 50px;
+    font-size: 0.75rem;
+  }
+  .destacados {
+    grid-template-rows: 0px 300px 0px 0px;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  }
+  .destacados2 {
+    width: 50%;
+    height: 50%;
+  }
+  .sus2 {
+    display: none;
+  }
+}
+/*tablet
+@media only screen and (min-width: 501px) and (max-width: 978px)
+*/
+/*desktop
+@media only screen and (max-width: 979px)
+*/
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,53 @@
+/*Mobile*/
+@media only screen and (max-width:500px) {
+    h1{
+        font-size: 1.25rem;
+    }
+    .pedagogias{
+        display: none;
+    }
+    .preguntas{
+        display:none;
+    }
+    h2{
+        text-decoration: underline;
+        font-size: 1rem;
+        text-align: center;
+    }
+    h3{
+        font-size: 0.75rem;
+    }
+    .quienes{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+    .niños{
+        width: 80%;
+    }
+    p{
+        padding:0px 50px 0px 50px;
+        font-size: 0.75rem;
+    }
+    .destacados{
+        grid-template-rows: 0px 300px 0px 0px;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+    .destacados2{
+        width: 50%;
+        height: 50%;
+    }
+    .sus2{
+        display: none;
+    }
+}
+
+/*tablet
+@media only screen and (min-width: 501px) and (max-width: 978px)
+*/
+
+
+/*desktop
+@media only screen and (max-width: 979px)
+*/
