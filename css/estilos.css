@@ -14,7 +14,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   background-color: #FFFEC4;
   background-size: cover;
 }
@@ -26,7 +26,7 @@ header .inicio .logo {
 }
 header nav {
   width: 100%;
-  font-size: 0.7rem;
+  font-size: 3rem;
   align-content: start;
 }
 header nav ul {
@@ -69,6 +69,9 @@ header nav ul a {
 }
 
 .sus3 .footer {
+  width: 100%;
+  border-radius: 20%;
+  align-items: justify;
   display: grid;
   grid-template-areas: "tex1 tex1 tex1 tex1" "img1 img2 img3 img4";
   grid-template-rows: 50px 100px;
@@ -78,20 +81,23 @@ header nav ul a {
   grid-area: tex1;
 }
 .sus3 .footer .face {
+  width: 30%;
   grid-area: img1;
-  border-radius: 20%;
   background-color: white;
   border: 1px solid white;
 }
 .sus3 .footer .whats {
+  width: 30%;
   grid-area: img2;
   background-color: white;
   border: 1px solid white;
 }
 .sus3 .footer .tele {
+  width: 30%;
   grid-area: img3;
 }
 .sus3 .footer .instagram {
+  width: 30%;
   grid-area: img4;
 }
 
